@@ -7,7 +7,7 @@ pipeline {
         }
     
     stages {
-         stge('First') { 
+         stage('First') { 
            steps { 
              cleanWs()
              bat 'java -version'

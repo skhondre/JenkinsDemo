@@ -7,8 +7,9 @@ pipeline {
         }
     
     stages {
-         stage('First') { 
+         stge('First') { 
            steps { 
+             cleanWs()
              bat 'java -version'
              bat 'mvn --version'
              echo 'I am first stage' 
